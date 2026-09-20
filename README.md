@@ -118,3 +118,7 @@ leaderboard submissions.
 A prototype. One run per arm, a single main model, and a 30-task set: enough to
 show the approach works end to end and to size the effect, not enough to claim
 it generalizes.
+
+## License
+
+Apache 2.0
