@@ -12,6 +12,35 @@ Costs use DeepSeek peak prices ($0.006/M cached input, $0.30/M uncached input,
 $1.20/M output) plus Jev at $0.042/M input. Jev itself was ~1% of the on-arm
 cost.
 
+## The sharper measurement: DeepSWE per-test scores
+
+Pass/fail throws away most of what a DeepSWE run tells you — "24 of 25 new
+tests pass" and "none pass" both score 0. The benchmark's own verifier reports
+`f2p_passed / f2p_total` (the tests the task is supposed to make pass), so the
+same 9 runs can be read at test granularity:
+
+| task | f2p on | f2p off |
+|---|---|---|
+| anko-typed-variable-bindings | 9/9 | 5/9 |
+| arktype-json-schema-refs-dependencies | 24/25 | 23/25 |
+| expr-try-catch-errors | 79/79 | 79/79 |
+| fastapi-deprecation-response-headers | 137/137 | 137/137 |
+| httpx-multipart-response-parsing | 121/122 | 120/122 |
+| katex-multicolumn-array-spans | 94/94 | 92/94 |
+| meriyah-explicit-resource-declarations | 49/49 | 0/49 |
+| python-statemachine-state-data-scoping | 72/72 | 70/72 |
+| scc-bounded-memory-spilling | 31/31 | 31/31 |
+
+**The filtered arm is never worse: 6 wins, 0 losses, 3 ties** (sign test on the
+6 non-ties, p≈0.031).
+
+Two honest qualifications. The significance comes from the *direction* being
+consistent, not from the size of the gaps: a paired t-test on the differences
+is not significant (t=1.50, df=8), because the mean is dominated by `meriyah`.
+And partial credit is our reading of the verifier's output — DeepSWE's own
+headline metric is the binary one. Terminal-Bench emits only a binary reward,
+so there is no equivalent view of those 21 tasks.
+
 
 ### Terminal-Bench 2.1 (21 tasks)
 
@@ -59,10 +88,11 @@ cost.
 
 ## Reading this honestly
 
-- **Not statistically significant.** Only 7 of 30 tasks disagree between the
-  arms (5 to Jev, 2 against); a sign test gives p≈0.45. One run per arm, and
-  same-task variance between runs was large — build-cython-ext's on-arm took 54
-  turns in one run and 81 in another.
+- **Pass/fail alone is not significant.** Only 7 of 30 tasks disagree between
+  the arms (5 to Jev, 2 against); a sign test gives p≈0.45. The per-test view
+  above is the stronger read of the same runs. One run per arm, and same-task
+  variance between runs was large — build-cython-ext's on-arm took 54 turns in
+  one run and 81 in another.
 - **The effect tracks how much there is to filter.** On Terminal-Bench, Jev cut
   ~5% of tool output characters and the arms tied 19/21. On DeepSWE it cut more
   and won 6/9 vs 3/9. The clearest case is `meriyah`: the off arm was shown

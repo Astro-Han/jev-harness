@@ -16,8 +16,17 @@ On 30 tasks (Terminal-Bench 2.1 + DeepSWE), one run per arm, with
 | Jev off | 22 / 30 | $2.80 | $0.127 |
 
 The gap is entirely on DeepSWE (6/9 vs 3/9); on Terminal-Bench the two arms tie
-at 19/21. See [RESULTS.md](RESULTS.md) for per-task numbers and caveats — with
-one run per arm this is a prototype signal, not a significance claim.
+at 19/21.
+
+Read at test granularity — DeepSWE's verifier reports how many of a task's new
+tests pass, not just whether all of them do — **the filtered arm is never worse
+on any of the 9 tasks: 6 wins, 0 losses, 3 ties** (sign test, p≈0.031). The
+clearest case is `meriyah`: 49/49 tests with the filter, 0/49 without, where
+the unfiltered agent was shown 1.46M characters of tool output and ran out of
+time.
+
+See [RESULTS.md](RESULTS.md) for per-task numbers and caveats. One run per arm:
+this is a prototype measurement, not a generalization claim.
 
 ## How it works
 
