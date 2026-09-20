@@ -7,6 +7,8 @@ sees it, plus an A/B harness that runs the same tasks with filtering on and off.
 The question: can a clean, filtered context plus a cheap model match a
 conventional harness at lower cost?
 
+![How the filter sits in the agent loop](assets/flow.png)
+
 On 30 tasks (Terminal-Bench 2.1 + DeepSWE), one run per arm, with
 `deepseek-flash` as the main model:
 
@@ -25,8 +27,17 @@ clearest case is `meriyah`: 49/49 tests with the filter, 0/49 without, where
 the unfiltered agent was shown 1.46M characters of tool output and ran out of
 time.
 
+![DeepSWE per-test results](assets/deepswe-f2p.png)
+
+Plotted against the 12 harness configurations FrontierHarness Eval ran on the
+same 30 tasks — a different model (Kimi K3) and 360 runs, so this places our
+arms, it does not rank them:
+
+![Position against FrontierHarness Eval](assets/frontier-position.png)
+
 See [RESULTS.md](RESULTS.md) for per-task numbers and caveats. One run per arm:
-this is a prototype measurement, not a generalization claim.
+this is a prototype measurement, not a generalization claim. Figures are
+regenerated with `uv run --with matplotlib scripts/plot_results.py`.
 
 ## How it works
 

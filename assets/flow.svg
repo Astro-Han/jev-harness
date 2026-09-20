@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 470" width="1000" height="470" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <rect width="1000" height="470" fill="#ffffff"/>
+
+  <text x="40" y="48" font-size="23" font-weight="700" fill="#14161a">Where the filter sits</text>
+  <text x="40" y="74" font-size="14" fill="#7c8391">Every tool result is scored before it reaches the model. Nothing is destroyed — dropped text is stored and can be read back.</text>
+
+  <!-- model box -->
+  <rect x="40" y="120" width="200" height="86" rx="10" fill="#eef3ff" stroke="#2f6df6" stroke-width="1.5"/>
+  <text x="140" y="155" font-size="16" font-weight="600" fill="#14161a" text-anchor="middle">main model</text>
+  <text x="140" y="178" font-size="13" fill="#7c8391" text-anchor="middle">deepseek-flash</text>
+
+  <!-- tool box -->
+  <rect x="330" y="120" width="200" height="86" rx="10" fill="#f6f7f9" stroke="#c2c7d0" stroke-width="1.5"/>
+  <text x="430" y="155" font-size="16" font-weight="600" fill="#14161a" text-anchor="middle">tool call</text>
+  <text x="430" y="178" font-size="13" fill="#7c8391" text-anchor="middle">bash · read · apply_patch</text>
+
+  <!-- jev box -->
+  <rect x="620" y="108" width="240" height="110" rx="10" fill="#2f6df6"/>
+  <text x="740" y="142" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle">Jev</text>
+  <text x="740" y="166" font-size="12.5" fill="#d7e3ff" text-anchor="middle">one boolean question per</text>
+  <text x="740" y="184" font-size="12.5" fill="#d7e3ff" text-anchor="middle">~2k-char chunk, keep if p &gt; 0.5</text>
+  <text x="740" y="204" font-size="12.5" fill="#d7e3ff" text-anchor="middle">state: task · intent · action · output</text>
+
+  <!-- arrows row 1 -->
+  <path d="M245 163 H322" stroke="#c2c7d0" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <path d="M535 163 H612" stroke="#c2c7d0" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <text x="283" y="152" font-size="12" fill="#7c8391" text-anchor="middle">runs</text>
+  <text x="573" y="152" font-size="12" fill="#7c8391" text-anchor="middle">raw output</text>
+
+  <!-- intent callout -->
+  <rect x="330" y="250" width="200" height="74" rx="10" fill="#fff6e8" stroke="#e0a44a" stroke-width="1.5"/>
+  <text x="430" y="276" font-size="14" font-weight="600" fill="#14161a" text-anchor="middle">step intent</text>
+  <text x="430" y="297" font-size="12" fill="#8a6a2f" text-anchor="middle">the agent's reasoning for</text>
+  <text x="430" y="313" font-size="12" fill="#8a6a2f" text-anchor="middle">why it ran this command</text>
+  <path d="M535 280 H700 V225" stroke="#e0a44a" stroke-width="2" fill="none" stroke-dasharray="5 4" marker-end="url(#b)"/>
+
+  <!-- kept / dropped -->
+  <rect x="620" y="300" width="240" height="60" rx="10" fill="#f6f7f9" stroke="#c2c7d0" stroke-width="1.5"/>
+  <text x="740" y="326" font-size="14" font-weight="600" fill="#14161a" text-anchor="middle">kept chunks — verbatim</text>
+  <text x="740" y="347" font-size="12" fill="#7c8391" text-anchor="middle">go straight back into context</text>
+
+  <rect x="620" y="376" width="240" height="66" rx="10" fill="#f6f7f9" stroke="#c2c7d0" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="740" y="401" font-size="14" font-weight="600" fill="#14161a" text-anchor="middle">dropped runs — one marker</text>
+  <text x="740" y="422" font-size="12" fill="#7c8391" text-anchor="middle">⟨… N chars elided → .jev-store/id.txt ⟩</text>
+
+  <path d="M740 225 V292" stroke="#2f6df6" stroke-width="2" fill="none" marker-end="url(#c)"/>
+  <path d="M660 222 V250 H588 V409 H612" stroke="#c2c7d0" stroke-width="2" fill="none" marker-end="url(#a)"/>
+
+  <!-- return to model -->
+  <path d="M612 330 H140 V215" stroke="#2f6df6" stroke-width="2" fill="none" marker-end="url(#c)"/>
+  <text x="330" y="348" font-size="12" fill="#2f6df6" text-anchor="middle">filtered result</text>
+
+  <!-- read-back -->
+  <path d="M612 409 H90 V215" stroke="#9aa1ad" stroke-width="1.6" fill="none" stroke-dasharray="5 4" marker-end="url(#d)"/>
+  <text x="330" y="428" font-size="12" fill="#7c8391" text-anchor="middle">`read` pulls the full text back on demand — never filtered</text>
+
+  <defs>
+    <marker id="a" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 z" fill="#c2c7d0"/></marker>
+    <marker id="b" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 z" fill="#e0a44a"/></marker>
+    <marker id="c" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 z" fill="#2f6df6"/></marker>
+    <marker id="d" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 z" fill="#9aa1ad"/></marker>
+  </defs>
+</svg>
