@@ -1,0 +1,1794 @@
+{
+  "date": "2026-09-22",
+  "description": "Metric snapshot extracted from retained local TB4 artifacts; raw trajectories are not included. Costs use fixed experiment rates, not invoices. Excluded tasks can still have recorded usage.",
+  "prices_usd_per_million_tokens": {
+    "hit": 0.006,
+    "miss": 0.3,
+    "out": 1.2,
+    "jev": 0.042
+  },
+  "tasks": [
+    {
+      "task": "atrx-vep-crispr",
+      "scored_pair": true,
+      "partial_pair": true,
+      "arms": {
+        "on": {
+          "reward": 0.0,
+          "score": "7/16",
+          "turns": 75,
+          "inp": 7171422,
+          "cached": 7105789,
+          "outp": 201230,
+          "jev_in": 93031,
+          "cost": 0.30770793600000007
+        },
+        "off": {
+          "reward": 0.0,
+          "score": "12/16",
+          "turns": 82,
+          "inp": 21992348,
+          "cached": 21744768,
+          "outp": 238855,
+          "jev_in": 0,
+          "cost": 0.491368608
+        }
+      }
+    },
+    {
+      "task": "batched-eval-parity",
+      "scored_pair": true,
+      "partial_pair": true,
+      "arms": {
+        "on": {
+          "reward": 0.0,
+          "score": "3/5",
+          "turns": 98,
+          "inp": 12549454,
+          "cached": 12485760,
+          "outp": 175690,
+          "jev_in": 59188,
+          "cost": 0.30733665600000004
+        },
+        "off": {
+          "reward": 0.0,
+          "score": "3/5",
+          "turns": 79,
+          "inp": 7923945,
+          "cached": 7856256,
+          "outp": 117419,
+          "jev_in": 0,
+          "cost": 0.20834703599999999
+        }
+      }
+    },
+    {
+      "task": "biped-contact-dynamics",
+      "scored_pair": true,
+      "partial_pair": true,
+      "arms": {
+        "on": {
+          "reward": 0.0,
+          "score": "0/3",
+          "turns": 51,
+          "inp": 5045555,
+          "cached": 5019008,
+          "outp": 186397,
+          "jev_in": 26820,
+          "cost": 0.26288098800000004
+        },
+        "off": {
+          "reward": 0.0,
+          "score": "0/3",
+          "turns": 37,
+          "inp": 4822917,
+          "cached": 4804224,
+          "outp": 192427,
+          "jev_in": 0,
+          "cost": 0.265345644
+        }
+      }
+    },
+    {
+      "task": "bun-sourcemap-leak",
+      "scored_pair": true,
+      "partial_pair": true,
+      "arms": {
+        "on": {
+          "reward": 0.0,
+          "score": "28/36",
+          "turns": 55,
+          "inp": 4513986,
+          "cached": 4481408,
+          "outp": 102954,
+          "jev_in": 42839,
+          "cost": 0.162005886
+        },
+        "off": {
+          "reward": 0.0,
+          "score": "27/36",
+          "turns": 39,
+          "inp": 1871793,
+          "cached": 1850752,
+          "outp": 64366,
+          "jev_in": 0,
+          "cost": 0.094656012
+        }
+      }
+    },
+    {
+      "task": "cad-model",
+      "scored_pair": true,
+      "partial_pair": true,
+      "arms": {
+        "on": {
+          "reward": 0.0,
+          "score": "0/8",
+          "turns": 124,
+          "inp": 19936304,
+          "cached": 19762816,
+          "outp": 280096,
+          "jev_in": 271973,
+          "cost": 0.5181613620000001
+        },
+        "off": {
+          "reward": 0.0,
+          "score": "0/8",
+          "turns": 71,
+          "inp": 4466759,
+          "cached": 4397435,
+          "outp": 66767,
+          "jev_in": 0,
+          "cost": 0.12730221
+        }
+      }
+    },
+    {
+      "task": "cargo-flight-dispatch",
+      "scored_pair": true,
+      "partial_pair": true,
+      "arms": {
+        "on": {
+          "reward": 0.0,
+          "score": "20/27",
+          "turns": 31,
+          "inp": 2143158,
+          "cached": 2120320,
+          "outp": 99865,
+          "jev_in": 26267,
+          "cost": 0.14051453400000002
+        },
+        "off": {
+          "reward": 0.0,
+          "score": "20/27",
+          "turns": 32,
+          "inp": 3398943,
+          "cached": 3363840,
+          "outp": 184870,
+          "jev_in": 0,
+          "cost": 0.25255794
+        }
+      }
+    },
+    {
+      "task": "coq-block-bound",
+      "scored_pair": true,
+      "partial_pair": true,
+      "arms": {
+        "on": {
+          "reward": 0.0,
+          "score": "2/3",
+          "turns": 9,
+          "inp": 367300,
+          "cached": 363136,
+          "outp": 86679,
+          "jev_in": 0,
+          "cost": 0.10744281600000001
+        },
+        "off": {
+          "reward": 0.0,
+          "score": "2/3",
+          "turns": 12,
+          "inp": 510302,
+          "cached": 506240,
+          "outp": 96574,
+          "jev_in": 0,
+          "cost": 0.12014484
+        }
+      }
+    },
+    {
+      "task": "ctr-optimization",
+      "scored_pair": true,
+      "partial_pair": true,
+      "arms": {
+        "on": {
+          "reward": 0.0,
+          "score": "1/4",
+          "turns": 74,
+          "inp": 4530601,
+          "cached": 4410752,
+          "outp": 70925,
+          "jev_in": 92809,
+          "cost": 0.15142719
+        },
+        "off": {
+          "reward": 0.0,
+          "score": "1/4",
+          "turns": 67,
+          "inp": 4423863,
+          "cached": 4345088,
+          "outp": 56832,
+          "jev_in": 0,
+          "cost": 0.117901428
+        }
+      }
+    },
+    {
+      "task": "cumulative-layout-shift",
+      "scored_pair": true,
+      "partial_pair": false,
+      "arms": {
+        "on": {
+          "reward": 0.0,
+          "score": "-",
+          "turns": 150,
+          "inp": 17485029,
+          "cached": 17395456,
+          "outp": 130540,
+          "jev_in": 95511,
+          "cost": 0.291904098
+        },
+        "off": {
+          "reward": 0.0,
+          "score": "-",
+          "turns": 150,
+          "inp": 18767957,
+          "cached": 18663040,
+          "outp": 132057,
+          "jev_in": 0,
+          "cost": 0.30192174
+        }
+      }
+    },
+    {
+      "task": "data-anonymization",
+      "scored_pair": true,
+      "partial_pair": true,
+      "arms": {
+        "on": {
+          "reward": 0.0,
+          "score": "6/8",
+          "turns": 35,
+          "inp": 2085702,
+          "cached": 2063232,
+          "outp": 87064,
+          "jev_in": 24490,
+          "cost": 0.12462577200000001
+        },
+        "off": {
+          "reward": 0.0,
+          "score": "6/8",
+          "turns": 32,
+          "inp": 2545660,
+          "cached": 2507776,
+          "outp": 93099,
+          "jev_in": 0,
+          "cost": 0.13813065600000002
+        }
+      }
+    },
+    {
+      "task": "distributed-dedup",
+      "scored_pair": true,
+      "partial_pair": false,
+      "arms": {
+        "on": {
+          "reward": 0.0,
+          "score": "-",
+          "turns": 84,
+          "inp": 9395353,
+          "cached": 9350784,
+          "outp": 167047,
+          "jev_in": 48859,
+          "cost": 0.271983882
+        },
+        "off": {
+          "reward": 0.0,
+          "score": "-",
+          "turns": 75,
+          "inp": 6869540,
+          "cached": 6824320,
+          "outp": 128313,
+          "jev_in": 0,
+          "cost": 0.20848752
+        }
+      }
+    },
+    {
+      "task": "embedding-drift-monitor",
+      "scored_pair": true,
+      "partial_pair": true,
+      "arms": {
+        "on": {
+          "reward": 1.0,
+          "score": "11/11",
+          "turns": 36,
+          "inp": 2356800,
+          "cached": 2317056,
+          "outp": 85431,
+          "jev_in": 43323,
+          "cost": 0.130162302
+        },
+        "off": {
+          "reward": 1.0,
+          "score": "11/11",
+          "turns": 51,
+          "inp": 3094080,
+          "cached": 3069312,
+          "outp": 88114,
+          "jev_in": 0,
+          "cost": 0.131583072
+        }
+      }
+    },
+    {
+      "task": "fin-saccr-rwa",
+      "scored_pair": true,
+      "partial_pair": true,
+      "arms": {
+        "on": {
+          "reward": 0.0,
+          "score": "22/24",
+          "turns": 93,
+          "inp": 11619763,
+          "cached": 11534080,
+          "outp": 185892,
+          "jev_in": 143162,
+          "cost": 0.323992584
+        },
+        "off": {
+          "reward": 0.0,
+          "score": "0/24",
+          "turns": 43,
+          "inp": 3810872,
+          "cached": 3685376,
+          "outp": 108750,
+          "jev_in": 0,
+          "cost": 0.19026105599999998
+        }
+      }
+    },
+    {
+      "task": "foodstuff-beta-activity",
+      "scored_pair": true,
+      "partial_pair": true,
+      "arms": {
+        "on": {
+          "reward": 0.0,
+          "score": "0/13",
+          "turns": 33,
+          "inp": 1487871,
+          "cached": 1461760,
+          "outp": 81514,
+          "jev_in": 26108,
+          "cost": 0.115517196
+        },
+        "off": {
+          "reward": 0.0,
+          "score": "0/13",
+          "turns": 23,
+          "inp": 930552,
+          "cached": 915456,
+          "outp": 84991,
+          "jev_in": 0,
+          "cost": 0.112010736
+        }
+      }
+    },
+    {
+      "task": "formal-crypto",
+      "scored_pair": true,
+      "partial_pair": true,
+      "arms": {
+        "on": {
+          "reward": 0.0,
+          "score": "1/19",
+          "turns": 136,
+          "inp": 25208173,
+          "cached": 25072000,
+          "outp": 220614,
+          "jev_in": 131946,
+          "cost": 0.46156243199999997
+        },
+        "off": {
+          "reward": 0.0,
+          "score": "1/19",
+          "turns": 122,
+          "inp": 24624262,
+          "cached": 24452736,
+          "outp": 201558,
+          "jev_in": 0,
+          "cost": 0.440043816
+        }
+      }
+    },
+    {
+      "task": "fp8-rmsnorm-gemm",
+      "scored_pair": false,
+      "partial_pair": false,
+      "arms": {
+        "on": {
+          "reward": null,
+          "score": "-",
+          "turns": 0,
+          "inp": 0,
+          "cached": 0,
+          "outp": 0,
+          "jev_in": 0,
+          "cost": 0.0
+        },
+        "off": {
+          "reward": null,
+          "score": "-",
+          "turns": 0,
+          "inp": 0,
+          "cached": 0,
+          "outp": 0,
+          "jev_in": 0,
+          "cost": 0.0
+        }
+      }
+    },
+    {
+      "task": "freecad-impeller",
+      "scored_pair": false,
+      "partial_pair": false,
+      "arms": {
+        "on": {
+          "reward": null,
+          "score": "-",
+          "turns": 0,
+          "inp": 0,
+          "cached": 0,
+          "outp": 0,
+          "jev_in": 0,
+          "cost": 0.0
+        },
+        "off": {
+          "reward": null,
+          "score": "-",
+          "turns": 0,
+          "inp": 0,
+          "cached": 0,
+          "outp": 0,
+          "jev_in": 0,
+          "cost": 0.0
+        }
+      }
+    },
+    {
+      "task": "freecad-platform-drawing",
+      "scored_pair": false,
+      "partial_pair": false,
+      "arms": {
+        "on": {
+          "reward": null,
+          "score": "-",
+          "turns": 0,
+          "inp": 0,
+          "cached": 0,
+          "outp": 0,
+          "jev_in": 0,
+          "cost": 0.0
+        },
+        "off": {
+          "reward": null,
+          "score": "-",
+          "turns": 0,
+          "inp": 0,
+          "cached": 0,
+          "outp": 0,
+          "jev_in": 0,
+          "cost": 0.0
+        }
+      }
+    },
+    {
+      "task": "freecad-spring-clip",
+      "scored_pair": false,
+      "partial_pair": false,
+      "arms": {
+        "on": {
+          "reward": null,
+          "score": "-",
+          "turns": 0,
+          "inp": 0,
+          "cached": 0,
+          "outp": 0,
+          "jev_in": 0,
+          "cost": 0.0
+        },
+        "off": {
+          "reward": null,
+          "score": "-",
+          "turns": 0,
+          "inp": 0,
+          "cached": 0,
+          "outp": 0,
+          "jev_in": 0,
+          "cost": 0.0
+        }
+      }
+    },
+    {
+      "task": "freight-dispatch-shift",
+      "scored_pair": true,
+      "partial_pair": true,
+      "arms": {
+        "on": {
+          "reward": 0.0,
+          "score": "1/1",
+          "turns": 83,
+          "inp": 7067480,
+          "cached": 7021568,
+          "outp": 108219,
+          "jev_in": 21159,
+          "cost": 0.186654486
+        },
+        "off": {
+          "reward": 0.0,
+          "score": "1/1",
+          "turns": 102,
+          "inp": 11196678,
+          "cached": 11143936,
+          "outp": 137920,
+          "jev_in": 0,
+          "cost": 0.248190216
+        }
+      }
+    },
+    {
+      "task": "glycan-ms2-elucidation",
+      "scored_pair": false,
+      "partial_pair": false,
+      "arms": {
+        "on": {
+          "reward": null,
+          "score": "-",
+          "turns": 0,
+          "inp": 0,
+          "cached": 0,
+          "outp": 0,
+          "jev_in": 0,
+          "cost": 0.0
+        },
+        "off": {
+          "reward": null,
+          "score": "-",
+          "turns": 0,
+          "inp": 0,
+          "cached": 0,
+          "outp": 0,
+          "jev_in": 0,
+          "cost": 0.0
+        }
+      }
+    },
+    {
+      "task": "gsea-proteomics",
+      "scored_pair": false,
+      "partial_pair": false,
+      "arms": {
+        "on": {
+          "reward": null,
+          "score": "-",
+          "turns": 0,
+          "inp": 0,
+          "cached": 0,
+          "outp": 0,
+          "jev_in": 0,
+          "cost": 0.0
+        },
+        "off": {
+          "reward": null,
+          "score": "-",
+          "turns": 0,
+          "inp": 0,
+          "cached": 0,
+          "outp": 0,
+          "jev_in": 0,
+          "cost": 0.0
+        }
+      }
+    },
+    {
+      "task": "heat-pump-warranty",
+      "scored_pair": true,
+      "partial_pair": false,
+      "arms": {
+        "on": {
+          "reward": 0.0,
+          "score": "-",
+          "turns": 15,
+          "inp": 188134,
+          "cached": 171520,
+          "outp": 4778,
+          "jev_in": 9025,
+          "cost": 0.012125969999999998
+        },
+        "off": {
+          "reward": 0.0,
+          "score": "-",
+          "turns": 10,
+          "inp": 109790,
+          "cached": 94592,
+          "outp": 3337,
+          "jev_in": 0,
+          "cost": 0.009131351999999999
+        }
+      }
+    },
+    {
+      "task": "hof-topology-interpenetration",
+      "scored_pair": false,
+      "partial_pair": false,
+      "arms": {
+        "on": {
+          "reward": null,
+          "score": "-",
+          "turns": 0,
+          "inp": 0,
+          "cached": 0,
+          "outp": 0,
+          "jev_in": 0,
+          "cost": 0.0
+        },
+        "off": {
+          "reward": null,
+          "score": "-",
+          "turns": 0,
+          "inp": 0,
+          "cached": 0,
+          "outp": 0,
+          "jev_in": 0,
+          "cost": 0.0
+        }
+      }
+    },
+    {
+      "task": "html-js-filter",
+      "scored_pair": false,
+      "partial_pair": false,
+      "arms": {
+        "on": {
+          "reward": null,
+          "score": "-",
+          "turns": 0,
+          "inp": 0,
+          "cached": 0,
+          "outp": 0,
+          "jev_in": 0,
+          "cost": 0.0
+        },
+        "off": {
+          "reward": null,
+          "score": "-",
+          "turns": 0,
+          "inp": 0,
+          "cached": 0,
+          "outp": 0,
+          "jev_in": 0,
+          "cost": 0.0
+        }
+      }
+    },
+    {
+      "task": "interleaved-vigenere",
+      "scored_pair": true,
+      "partial_pair": true,
+      "arms": {
+        "on": {
+          "reward": 1.0,
+          "score": "6/6",
+          "turns": 150,
+          "inp": 29976361,
+          "cached": 29895424,
+          "outp": 387670,
+          "jev_in": 60285,
+          "cost": 0.671389614
+        },
+        "off": {
+          "reward": 0.0,
+          "score": "2/6",
+          "turns": 35,
+          "inp": 1639374,
+          "cached": 1605757,
+          "outp": 90603,
+          "jev_in": 0,
+          "cost": 0.12844324199999999
+        }
+      }
+    },
+    {
+      "task": "intrastat-meldung",
+      "scored_pair": false,
+      "partial_pair": false,
+      "arms": {
+        "on": {
+          "reward": null,
+          "score": "-",
+          "turns": 0,
+          "inp": 0,
+          "cached": 0,
+          "outp": 0,
+          "jev_in": 0,
+          "cost": 0.0
+        },
+        "off": {
+          "reward": null,
+          "score": "-",
+          "turns": 0,
+          "inp": 0,
+          "cached": 0,
+          "outp": 0,
+          "jev_in": 0,
+          "cost": 0.0
+        }
+      }
+    },
+    {
+      "task": "jax-speedrun-gpu",
+      "scored_pair": false,
+      "partial_pair": false,
+      "arms": {
+        "on": {
+          "reward": null,
+          "score": "-",
+          "turns": 0,
+          "inp": 0,
+          "cached": 0,
+          "outp": 0,
+          "jev_in": 0,
+          "cost": 0.0
+        },
+        "off": {
+          "reward": null,
+          "score": "-",
+          "turns": 0,
+          "inp": 0,
+          "cached": 0,
+          "outp": 0,
+          "jev_in": 0,
+          "cost": 0.0
+        }
+      }
+    },
+    {
+      "task": "ks-solver-cpp",
+      "scored_pair": true,
+      "partial_pair": false,
+      "arms": {
+        "on": {
+          "reward": 0.0,
+          "score": "-",
+          "turns": 3,
+          "inp": 8464,
+          "cached": 7168,
+          "outp": 66496,
+          "jev_in": 0,
+          "cost": 0.080227008
+        },
+        "off": {
+          "reward": 0.0,
+          "score": "-",
+          "turns": 2,
+          "inp": 4361,
+          "cached": 3584,
+          "outp": 65712,
+          "jev_in": 0,
+          "cost": 0.079109004
+        }
+      }
+    },
+    {
+      "task": "kv-live-surgery",
+      "scored_pair": true,
+      "partial_pair": true,
+      "arms": {
+        "on": {
+          "reward": 0.0,
+          "score": "0/1",
+          "turns": 114,
+          "inp": 17567455,
+          "cached": 17488640,
+          "outp": 210639,
+          "jev_in": 77263,
+          "cost": 0.384588186
+        },
+        "off": {
+          "reward": 0.0,
+          "score": "0/1",
+          "turns": 93,
+          "inp": 11500399,
+          "cached": 11448192,
+          "outp": 187150,
+          "jev_in": 0,
+          "cost": 0.308931252
+        }
+      }
+    },
+    {
+      "task": "lake-temp-glm",
+      "scored_pair": true,
+      "partial_pair": true,
+      "arms": {
+        "on": {
+          "reward": 0.0,
+          "score": "0/1",
+          "turns": 93,
+          "inp": 10944047,
+          "cached": 10672128,
+          "outp": 112067,
+          "jev_in": 52522,
+          "cost": 0.282294792
+        },
+        "off": {
+          "reward": 0.0,
+          "score": "0/1",
+          "turns": 69,
+          "inp": 4557999,
+          "cached": 4520959,
+          "outp": 75772,
+          "jev_in": 0,
+          "cost": 0.129164154
+        }
+      }
+    },
+    {
+      "task": "layout-config-recreation",
+      "scored_pair": true,
+      "partial_pair": true,
+      "arms": {
+        "on": {
+          "reward": 0.0,
+          "score": "1/12",
+          "turns": 150,
+          "inp": 24598722,
+          "cached": 24430592,
+          "outp": 144920,
+          "jev_in": 274103,
+          "cost": 0.38243887800000004
+        },
+        "off": {
+          "reward": 0.0,
+          "score": "1/12",
+          "turns": 150,
+          "inp": 23014193,
+          "cached": 22830080,
+          "outp": 144415,
+          "jev_in": 0,
+          "cost": 0.36551238
+        }
+      }
+    },
+    {
+      "task": "layout-config-recreation2",
+      "scored_pair": true,
+      "partial_pair": true,
+      "arms": {
+        "on": {
+          "reward": 0.0,
+          "score": "1/9",
+          "turns": 130,
+          "inp": 13197534,
+          "cached": 13106688,
+          "outp": 134093,
+          "jev_in": 111500,
+          "cost": 0.271488528
+        },
+        "off": {
+          "reward": 0.0,
+          "score": "1/9",
+          "turns": 91,
+          "inp": 7414717,
+          "cached": 7333632,
+          "outp": 92436,
+          "jev_in": 0,
+          "cost": 0.179250492
+        }
+      }
+    },
+    {
+      "task": "legacy-utility-triage",
+      "scored_pair": true,
+      "partial_pair": false,
+      "arms": {
+        "on": {
+          "reward": 0.0,
+          "score": "-",
+          "turns": 107,
+          "inp": 56123953,
+          "cached": 55184512,
+          "outp": 85242,
+          "jev_in": 100108,
+          "cost": 0.719434308
+        },
+        "off": {
+          "reward": 0.0,
+          "score": "-",
+          "turns": 127,
+          "inp": 14391338,
+          "cached": 14278144,
+          "outp": 113785,
+          "jev_in": 0,
+          "cost": 0.256169064
+        }
+      }
+    },
+    {
+      "task": "live-database-cutover",
+      "scored_pair": false,
+      "partial_pair": false,
+      "arms": {
+        "on": {
+          "reward": null,
+          "score": "-",
+          "turns": 150,
+          "inp": 22983112,
+          "cached": 22909696,
+          "outp": 232396,
+          "jev_in": 60536,
+          "cost": 0.440900688
+        },
+        "off": {
+          "reward": null,
+          "score": "-",
+          "turns": 150,
+          "inp": 24036784,
+          "cached": 23963647,
+          "outp": 242623,
+          "jev_in": 0,
+          "cost": 0.45687058199999997
+        }
+      }
+    },
+    {
+      "task": "math-eval-grader",
+      "scored_pair": false,
+      "partial_pair": false,
+      "arms": {
+        "on": {
+          "reward": null,
+          "score": "-",
+          "turns": 0,
+          "inp": 0,
+          "cached": 0,
+          "outp": 0,
+          "jev_in": 0,
+          "cost": 0.0
+        },
+        "off": {
+          "reward": null,
+          "score": "-",
+          "turns": 0,
+          "inp": 0,
+          "cached": 0,
+          "outp": 0,
+          "jev_in": 0,
+          "cost": 0.0
+        }
+      }
+    },
+    {
+      "task": "medical-claims-processing",
+      "scored_pair": true,
+      "partial_pair": true,
+      "arms": {
+        "on": {
+          "reward": 0.0,
+          "score": "1/1",
+          "turns": 109,
+          "inp": 8086338,
+          "cached": 8022912,
+          "outp": 108692,
+          "jev_in": 59956,
+          "cost": 0.200113824
+        },
+        "off": {
+          "reward": 0.0,
+          "score": "1/1",
+          "turns": 127,
+          "inp": 15964238,
+          "cached": 15856000,
+          "outp": 138047,
+          "jev_in": 0,
+          "cost": 0.29326379999999996
+        }
+      }
+    },
+    {
+      "task": "mp-checkpoint-consolidation",
+      "scored_pair": true,
+      "partial_pair": true,
+      "arms": {
+        "on": {
+          "reward": 0.0,
+          "score": "0/4",
+          "turns": 88,
+          "inp": 9904005,
+          "cached": 9844352,
+          "outp": 159474,
+          "jev_in": 48633,
+          "cost": 0.270373398
+        },
+        "off": {
+          "reward": 1.0,
+          "score": "4/4",
+          "turns": 101,
+          "inp": 16874707,
+          "cached": 16808064,
+          "outp": 307298,
+          "jev_in": 0,
+          "cost": 0.48959888399999996
+        }
+      }
+    },
+    {
+      "task": "music-harmony",
+      "scored_pair": true,
+      "partial_pair": false,
+      "arms": {
+        "on": {
+          "reward": 0.0,
+          "score": "-",
+          "turns": 27,
+          "inp": 729578,
+          "cached": 700544,
+          "outp": 99506,
+          "jev_in": 82762,
+          "cost": 0.13579666799999998
+        },
+        "off": {
+          "reward": 0.0,
+          "score": "-",
+          "turns": 26,
+          "inp": 1177279,
+          "cached": 1129216,
+          "outp": 167649,
+          "jev_in": 0,
+          "cost": 0.222372996
+        }
+      }
+    },
+    {
+      "task": "mvcc-lsm-compaction",
+      "scored_pair": true,
+      "partial_pair": true,
+      "arms": {
+        "on": {
+          "reward": 0.0,
+          "score": "10/15",
+          "turns": 10,
+          "inp": 242204,
+          "cached": 231680,
+          "outp": 30885,
+          "jev_in": 9913,
+          "cost": 0.042025625999999996
+        },
+        "off": {
+          "reward": 1.0,
+          "score": "15/15",
+          "turns": 52,
+          "inp": 4010658,
+          "cached": 3982592,
+          "outp": 109164,
+          "jev_in": 0,
+          "cost": 0.163312152
+        }
+      }
+    },
+    {
+      "task": "nextjs-performance",
+      "scored_pair": true,
+      "partial_pair": true,
+      "arms": {
+        "on": {
+          "reward": 0.0,
+          "score": "0/5",
+          "turns": 103,
+          "inp": 6598825,
+          "cached": 6551040,
+          "outp": 86668,
+          "jev_in": 38623,
+          "cost": 0.159265506
+        },
+        "off": {
+          "reward": 0.0,
+          "score": "1/5",
+          "turns": 104,
+          "inp": 8279546,
+          "cached": 8228736,
+          "outp": 109608,
+          "jev_in": 0,
+          "cost": 0.196145016
+        }
+      }
+    },
+    {
+      "task": "ontology-kg-querying",
+      "scored_pair": true,
+      "partial_pair": true,
+      "arms": {
+        "on": {
+          "reward": 0.0,
+          "score": "11/13",
+          "turns": 72,
+          "inp": 10419108,
+          "cached": 10274176,
+          "outp": 131606,
+          "jev_in": 34382,
+          "cost": 0.26449589999999995
+        },
+        "off": {
+          "reward": 0.0,
+          "score": "10/13",
+          "turns": 72,
+          "inp": 13559420,
+          "cached": 13408384,
+          "outp": 149669,
+          "jev_in": 0,
+          "cost": 0.30536390399999996
+        }
+      }
+    },
+    {
+      "task": "payments-pipeline-fix",
+      "scored_pair": false,
+      "partial_pair": false,
+      "arms": {
+        "on": {
+          "reward": null,
+          "score": "-",
+          "turns": 90,
+          "inp": 8334457,
+          "cached": 8283008,
+          "outp": 137159,
+          "jev_in": 28276,
+          "cost": 0.23091114
+        },
+        "off": {
+          "reward": null,
+          "score": "-",
+          "turns": 148,
+          "inp": 24709013,
+          "cached": 24625408,
+          "outp": 250947,
+          "jev_in": 0,
+          "cost": 0.473970348
+        }
+      }
+    },
+    {
+      "task": "photonic-waveguide-routing",
+      "scored_pair": true,
+      "partial_pair": true,
+      "arms": {
+        "on": {
+          "reward": 0.0,
+          "score": "12/14",
+          "turns": 11,
+          "inp": 880633,
+          "cached": 863104,
+          "outp": 228940,
+          "jev_in": 7864,
+          "cost": 0.285495612
+        },
+        "off": {
+          "reward": 0.0,
+          "score": "12/14",
+          "turns": 5,
+          "inp": 36487,
+          "cached": 23808,
+          "outp": 65898,
+          "jev_in": 0,
+          "cost": 0.08302414799999999
+        }
+      }
+    },
+    {
+      "task": "pretrain-shard-corruption",
+      "scored_pair": true,
+      "partial_pair": true,
+      "arms": {
+        "on": {
+          "reward": 0.0,
+          "score": "7/12",
+          "turns": 109,
+          "inp": 12591432,
+          "cached": 12518912,
+          "outp": 174526,
+          "jev_in": 52848,
+          "cost": 0.3085202879999999
+        },
+        "off": {
+          "reward": 0.0,
+          "score": "10/12",
+          "turns": 103,
+          "inp": 12462879,
+          "cached": 12291712,
+          "outp": 169173,
+          "jev_in": 0,
+          "cost": 0.328107972
+        }
+      }
+    },
+    {
+      "task": "production-planning",
+      "scored_pair": true,
+      "partial_pair": true,
+      "arms": {
+        "on": {
+          "reward": 0.0,
+          "score": "18/20",
+          "turns": 33,
+          "inp": 3188265,
+          "cached": 3108480,
+          "outp": 134423,
+          "jev_in": 79733,
+          "cost": 0.207242766
+        },
+        "off": {
+          "reward": 0.0,
+          "score": "1/20",
+          "turns": 16,
+          "inp": 434066,
+          "cached": 392320,
+          "outp": 85866,
+          "jev_in": 0,
+          "cost": 0.11791692
+        }
+      }
+    },
+    {
+      "task": "protein-autointerp-disulfide",
+      "scored_pair": true,
+      "partial_pair": true,
+      "arms": {
+        "on": {
+          "reward": 0.0,
+          "score": "0/2",
+          "turns": 23,
+          "inp": 531791,
+          "cached": 523776,
+          "outp": 26731,
+          "jev_in": 5983,
+          "cost": 0.037875642
+        },
+        "off": {
+          "reward": 0.0,
+          "score": "1/2",
+          "turns": 20,
+          "inp": 1184607,
+          "cached": 1125248,
+          "outp": 131220,
+          "jev_in": 0,
+          "cost": 0.182023188
+        }
+      }
+    },
+    {
+      "task": "react-lead-form",
+      "scored_pair": true,
+      "partial_pair": false,
+      "arms": {
+        "on": {
+          "reward": 0.0,
+          "score": "-",
+          "turns": 5,
+          "inp": 43600,
+          "cached": 35456,
+          "outp": 11068,
+          "jev_in": 37157,
+          "cost": 0.01749813
+        },
+        "off": {
+          "reward": 0.0,
+          "score": "-",
+          "turns": 9,
+          "inp": 93845,
+          "cached": 82432,
+          "outp": 10311,
+          "jev_in": 0,
+          "cost": 0.016291692
+        }
+      }
+    },
+    {
+      "task": "retro-console-soc",
+      "scored_pair": true,
+      "partial_pair": true,
+      "arms": {
+        "on": {
+          "reward": 0.0,
+          "score": "1/8",
+          "turns": 150,
+          "inp": 29846127,
+          "cached": 29747840,
+          "outp": 299809,
+          "jev_in": 84288,
+          "cost": 0.571284036
+        },
+        "off": {
+          "reward": 0.0,
+          "score": "4/8",
+          "turns": 150,
+          "inp": 36595760,
+          "cached": 36419840,
+          "outp": 233102,
+          "jev_in": 0,
+          "cost": 0.55101744
+        }
+      }
+    },
+    {
+      "task": "risk-scorer-replay",
+      "scored_pair": false,
+      "partial_pair": false,
+      "arms": {
+        "on": {
+          "reward": null,
+          "score": "-",
+          "turns": 0,
+          "inp": 0,
+          "cached": 0,
+          "outp": 0,
+          "jev_in": 0,
+          "cost": 0.0
+        },
+        "off": {
+          "reward": null,
+          "score": "-",
+          "turns": 0,
+          "inp": 0,
+          "cached": 0,
+          "outp": 0,
+          "jev_in": 0,
+          "cost": 0.0
+        }
+      }
+    },
+    {
+      "task": "roy-polymorph-cn",
+      "scored_pair": false,
+      "partial_pair": false,
+      "arms": {
+        "on": {
+          "reward": null,
+          "score": "-",
+          "turns": 0,
+          "inp": 0,
+          "cached": 0,
+          "outp": 0,
+          "jev_in": 0,
+          "cost": 0.0
+        },
+        "off": {
+          "reward": null,
+          "score": "-",
+          "turns": 0,
+          "inp": 0,
+          "cached": 0,
+          "outp": 0,
+          "jev_in": 0,
+          "cost": 0.0
+        }
+      }
+    },
+    {
+      "task": "rs-archive-clone",
+      "scored_pair": false,
+      "partial_pair": false,
+      "arms": {
+        "on": {
+          "reward": null,
+          "score": "-",
+          "turns": 0,
+          "inp": 0,
+          "cached": 0,
+          "outp": 0,
+          "jev_in": 0,
+          "cost": 0.0
+        },
+        "off": {
+          "reward": null,
+          "score": "-",
+          "turns": 0,
+          "inp": 0,
+          "cached": 0,
+          "outp": 0,
+          "jev_in": 0,
+          "cost": 0.0
+        }
+      }
+    },
+    {
+      "task": "satb-audio-transcription",
+      "scored_pair": true,
+      "partial_pair": true,
+      "arms": {
+        "on": {
+          "reward": 0.0,
+          "score": "27/40",
+          "turns": 129,
+          "inp": 35328573,
+          "cached": 35136256,
+          "outp": 389348,
+          "jev_in": 254953,
+          "cost": 0.746438262
+        },
+        "off": {
+          "reward": 0.0,
+          "score": "23/40",
+          "turns": 117,
+          "inp": 28294161,
+          "cached": 28112256,
+          "outp": 323085,
+          "jev_in": 0,
+          "cost": 0.610947036
+        }
+      }
+    },
+    {
+      "task": "session-window-debug",
+      "scored_pair": true,
+      "partial_pair": true,
+      "arms": {
+        "on": {
+          "reward": 0.0,
+          "score": "5/7",
+          "turns": 36,
+          "inp": 2517382,
+          "cached": 2492288,
+          "outp": 106407,
+          "jev_in": 10110,
+          "cost": 0.15059494799999998
+        },
+        "off": {
+          "reward": 0.0,
+          "score": "5/7",
+          "turns": 43,
+          "inp": 3653278,
+          "cached": 3629312,
+          "outp": 120943,
+          "jev_in": 0,
+          "cost": 0.174097272
+        }
+      }
+    },
+    {
+      "task": "sglang-qwen-burst",
+      "scored_pair": true,
+      "partial_pair": true,
+      "arms": {
+        "on": {
+          "reward": 0.0,
+          "score": "3/13",
+          "turns": 150,
+          "inp": 21708914,
+          "cached": 21539840,
+          "outp": 65520,
+          "jev_in": 137877,
+          "cost": 0.26437607399999996
+        },
+        "off": {
+          "reward": 0.0,
+          "score": "3/13",
+          "turns": 150,
+          "inp": 17680856,
+          "cached": 17540992,
+          "outp": 81067,
+          "jev_in": 0,
+          "cost": 0.244485552
+        }
+      }
+    },
+    {
+      "task": "shadow-relay",
+      "scored_pair": true,
+      "partial_pair": true,
+      "arms": {
+        "on": {
+          "reward": 0.0,
+          "score": "1/8",
+          "turns": 81,
+          "inp": 13381919,
+          "cached": 13303552,
+          "outp": 257429,
+          "jev_in": 122580,
+          "cost": 0.41739457199999996
+        },
+        "off": {
+          "reward": 0.0,
+          "score": "1/8",
+          "turns": 38,
+          "inp": 3287235,
+          "cached": 3207680,
+          "outp": 95250,
+          "jev_in": 0,
+          "cost": 0.15741258000000002
+        }
+      }
+    },
+    {
+      "task": "sound-change-cascade",
+      "scored_pair": true,
+      "partial_pair": true,
+      "arms": {
+        "on": {
+          "reward": 0.0,
+          "score": "0/7",
+          "turns": 96,
+          "inp": 16674391,
+          "cached": 16576896,
+          "outp": 270155,
+          "jev_in": 53147,
+          "cost": 0.45512805
+        },
+        "off": {
+          "reward": 0.0,
+          "score": "0/7",
+          "turns": 97,
+          "inp": 20925919,
+          "cached": 20832000,
+          "outp": 299966,
+          "jev_in": 0,
+          "cost": 0.5131269
+        }
+      }
+    },
+    {
+      "task": "takens-embedding-lean",
+      "scored_pair": true,
+      "partial_pair": true,
+      "arms": {
+        "on": {
+          "reward": 0.0,
+          "score": "5/9",
+          "turns": 44,
+          "inp": 4048644,
+          "cached": 4014080,
+          "outp": 212492,
+          "jev_in": 45903,
+          "cost": 0.291372006
+        },
+        "off": {
+          "reward": 0.0,
+          "score": "5/9",
+          "turns": 21,
+          "inp": 2213196,
+          "cached": 2188672,
+          "outp": 238159,
+          "jev_in": 0,
+          "cost": 0.306280032
+        }
+      }
+    },
+    {
+      "task": "telecom-entity-resolution",
+      "scored_pair": true,
+      "partial_pair": true,
+      "arms": {
+        "on": {
+          "reward": 0.0,
+          "score": "0/10",
+          "turns": 150,
+          "inp": 23529675,
+          "cached": 23406592,
+          "outp": 199246,
+          "jev_in": 164689,
+          "cost": 0.42337659000000005
+        },
+        "off": {
+          "reward": 0.0,
+          "score": "0/10",
+          "turns": 150,
+          "inp": 20561734,
+          "cached": 20437376,
+          "outp": 193022,
+          "jev_in": 0,
+          "cost": 0.391558056
+        }
+      }
+    },
+    {
+      "task": "uefi-bootkit",
+      "scored_pair": true,
+      "partial_pair": true,
+      "arms": {
+        "on": {
+          "reward": 0.0,
+          "score": "6/8",
+          "turns": 150,
+          "inp": 15036037,
+          "cached": 14924544,
+          "outp": 147977,
+          "jev_in": 60254,
+          "cost": 0.303098232
+        },
+        "off": {
+          "reward": 1.0,
+          "score": "8/8",
+          "turns": 126,
+          "inp": 19761028,
+          "cached": 19507328,
+          "outp": 171840,
+          "jev_in": 0,
+          "cost": 0.399361968
+        }
+      }
+    },
+    {
+      "task": "vba-userform-port",
+      "scored_pair": true,
+      "partial_pair": true,
+      "arms": {
+        "on": {
+          "reward": 0.0,
+          "score": "4/4",
+          "turns": 118,
+          "inp": 16104255,
+          "cached": 16032128,
+          "outp": 171653,
+          "jev_in": 33700,
+          "cost": 0.32522986800000003
+        },
+        "off": {
+          "reward": 0.0,
+          "score": "4/4",
+          "turns": 115,
+          "inp": 15474433,
+          "cached": 15395712,
+          "outp": 149368,
+          "jev_in": 0,
+          "cost": 0.295232172
+        }
+      }
+    },
+    {
+      "task": "vf2-speedup-networkx",
+      "scored_pair": true,
+      "partial_pair": true,
+      "arms": {
+        "on": {
+          "reward": 0.0,
+          "score": "0/60",
+          "turns": 29,
+          "inp": 944801,
+          "cached": 914688,
+          "outp": 55231,
+          "jev_in": 20847,
+          "cost": 0.08167480199999999
+        },
+        "off": {
+          "reward": 1.0,
+          "score": "60/60",
+          "turns": 122,
+          "inp": 28088605,
+          "cached": 27979520,
+          "outp": 345883,
+          "jev_in": 0,
+          "cost": 0.6156622199999999
+        }
+      }
+    },
+    {
+      "task": "vllm-deepseek-streaming",
+      "scored_pair": true,
+      "partial_pair": true,
+      "arms": {
+        "on": {
+          "reward": 0.0,
+          "score": "1/5",
+          "turns": 34,
+          "inp": 765512,
+          "cached": 730240,
+          "outp": 17243,
+          "jev_in": 24168,
+          "cost": 0.036669695999999995
+        },
+        "off": {
+          "reward": 0.0,
+          "score": "1/5",
+          "turns": 101,
+          "inp": 8833300,
+          "cached": 8728448,
+          "outp": 66016,
+          "jev_in": 0,
+          "cost": 0.16304548800000002
+        }
+      }
+    },
+    {
+      "task": "vpp-loss-divergence",
+      "scored_pair": false,
+      "partial_pair": false,
+      "arms": {
+        "on": {
+          "reward": null,
+          "score": "-",
+          "turns": 144,
+          "inp": 26770767,
+          "cached": 26564736,
+          "outp": 195554,
+          "jev_in": 154712,
+          "cost": 0.46236041999999994
+        },
+        "off": {
+          "reward": null,
+          "score": "-",
+          "turns": 117,
+          "inp": 19731870,
+          "cached": 19564544,
+          "outp": 225058,
+          "jev_in": 0,
+          "cost": 0.43765466399999997
+        }
+      }
+    },
+    {
+      "task": "wal-recovery-ordering",
+      "scored_pair": true,
+      "partial_pair": true,
+      "arms": {
+        "on": {
+          "reward": 0.0,
+          "score": "95/97",
+          "turns": 33,
+          "inp": 1531504,
+          "cached": 1510016,
+          "outp": 59908,
+          "jev_in": 17830,
+          "cost": 0.088144956
+        },
+        "off": {
+          "reward": 0.0,
+          "score": "95/97",
+          "turns": 38,
+          "inp": 2172961,
+          "cached": 2150016,
+          "outp": 67895,
+          "jev_in": 0,
+          "cost": 0.10125759599999999
+        }
+      }
+    },
+    {
+      "task": "wdm-design",
+      "scored_pair": true,
+      "partial_pair": true,
+      "arms": {
+        "on": {
+          "reward": 0.0,
+          "score": "0/6",
+          "turns": 84,
+          "inp": 8665022,
+          "cached": 8617600,
+          "outp": 150129,
+          "jev_in": 70071,
+          "cost": 0.24902998199999998
+        },
+        "off": {
+          "reward": 0.0,
+          "score": "0/6",
+          "turns": 81,
+          "inp": 7637060,
+          "cached": 7590912,
+          "outp": 111548,
+          "jev_in": 0,
+          "cost": 0.193247472
+        }
+      }
+    }
+  ]
+}

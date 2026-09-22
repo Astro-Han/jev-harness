@@ -9,6 +9,31 @@ conventional harness at lower cost?
 
 ![How the filter sits in the agent loop](assets/flow.png)
 
+## Latest outcome: TB4 follow-up, September 22, 2026
+
+**The current integration did not demonstrate enough value to justify default
+adoption or further large-scale runs. The experiment is closed.**
+
+On 49 scored TB4 pairs, Jev on passed 2 tasks versus 5 for off, used 11.78%
+more cumulative input tokens, and incurred 8.17% more estimated model cost.
+Mean per-task test pass fractions were 44.27% versus 48.04% on 42 pairs with
+test counts in both arms. Infrastructure costs are separate.
+
+Trajectory inspection found unbounded-output failures, environment limitations,
+and divergent execution paths. The result does not establish that Jev is
+generally ineffective or that filtering caused the success-rate difference.
+It does establish that this implementation has not demonstrated an end-to-end
+benefit sufficient to justify its added complexity.
+
+Read the [TB4 report and trajectory analysis](TB4-CONCLUSION-2026-09-22.md)
+and [per-task metric snapshot](tb4-results-2026-09-22.json).
+The experiment VM has been deleted and automatic reruns disabled.
+
+## Earlier 30-task prototype
+
+The following results belong to the earlier experiment. They are retained as
+historical evidence and are not pooled with, or a substitute for, the TB4 follow-up.
+
 On 30 tasks (Terminal-Bench 2.1 + DeepSWE), one run per arm, with
 `deepseek-flash` as the main model:
 
@@ -52,7 +77,7 @@ regenerated with `uv run --with matplotlib scripts/plot_results.py`.
   retrieve it. Filtering is a routing decision, never destruction.
 - Jev failures fail open: the unfiltered output is returned and the error logged.
 
-### Intent is what makes the filter work
+### Intent in the earlier filtering experiments
 
 The filter state is `{task, intent, action, output_parts}`, where **intent is
 the agent's own reasoning from the turn that issued the tool call** — *why* it
@@ -135,9 +160,11 @@ leaderboard submissions.
 
 ## Status
 
-A prototype. One run per arm, a single main model, and a 30-task set: enough to
-show the approach works end to end and to size the effect, not enough to claim
-it generalizes.
+A closed prototype experiment. The earlier 30-task result was encouraging,
+but the later TB4 evaluation did not establish sufficient value for the current
+integration. Both used one run per arm and a single main model; neither
+establishes general effectiveness. See the [final report](TB4-CONCLUSION-2026-09-22.md)
+for the decision, evidence, and limitations.
 
 ## License
 

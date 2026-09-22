@@ -1,5 +1,10 @@
 # Results
 
+> Historical results from the initial 30-task prototype. For the later TB4
+> evaluation and the decision to stop investing in the current integration,
+> see the [September 22 report](TB4-CONCLUSION-2026-09-22.md). The datasets and
+> budgets differ; these results are not pooled with TB4.
+
 30 tasks from frontier-harness-eval (21 Terminal-Bench 2.1 + 9 DeepSWE), two
 arms of the same harness — Jev filtering on and off — with `deepseek-flash` as
 the main model. One run per arm per task, September 2026.
